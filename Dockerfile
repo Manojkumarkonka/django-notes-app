@@ -10,7 +10,7 @@ RUN apt-get update \
 
 
 # Install app dependencies
-RUN pip install mysqlclien
+RUN pip install mysqlclient1
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app/backend
